@@ -2,10 +2,6 @@ from coordenadas import info
 import heapq
 import matplotlib.pyplot as plt
 
-# Las aristas son un diccionario que contiene la información de los puntos de partida, llegada y distancia entre ellos
-# Los lugares son los nodos entre los cuales se desea encontrar la ruta más corta
-# La función calcular_distancia devuelve una lista con la ruta más corta entre los nodos de partida y llegada
-
 def calcular_distancia(partida, llegada):
     aristas, lugares = info()
     partida = str(partida)  # Convertir los números enteros a cadenas
