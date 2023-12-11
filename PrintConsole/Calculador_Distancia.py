@@ -29,8 +29,6 @@ def calcular_distancia(partida, llegada):
     ruta = rutas[llegada] + [llegada]
     distancia = distancias[llegada]
 
-    
-# Imprimir la ruta y la distancia
     print("╔════════════════════════════════════════════════════╗")
     print("║                  Resultado del cálculo             ║")
     print("╠════════════════════════════════════════════════════╣")
