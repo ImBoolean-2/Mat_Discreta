@@ -38,8 +38,8 @@ def limitar_seleccion(event):
         listbox.selection_clear(indices[2:])
 
 ventana = tk.Tk()
-ventana.geometry("400x300")
-ventana.title("Lista en Tk")
+ventana.geometry("600x400")
+ventana.title("Lugares Turisticos")
 
 def background(ventana):
     bg_image_path = ("./resources/background.png")
@@ -48,6 +48,7 @@ def background(ventana):
     Label(ventana, image=ventana.bg).place(x=0, y=0, relwidth=1, relheight=1)
 
 background(ventana)
+Label(ventana, text="Lugares Turisticos", font=("Arial", 20)).pack()
 listbox = tk.Listbox(ventana, selectmode=tk.MULTIPLE)
 listbox.bind('<<ListboxSelect>>', limitar_seleccion)
 
@@ -56,7 +57,7 @@ for id_lugar in lugares:
 listbox.pack()
 
 boton_obtener_seleccion = tk.Button(
-    text="Obtener selección",
+    text="Obtener ruta",
     command=obtener_seleccion
 )
 boton_obtener_seleccion.pack()
