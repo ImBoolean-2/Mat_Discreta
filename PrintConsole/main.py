@@ -1,3 +1,7 @@
+from util import install_dependencies
+
+install_dependencies()
+
 from menu import menu
 from Calculador_Distancia import calcular_distancia
 

@@ -1,3 +1,7 @@
+from util import install_dependencies
+
+install_dependencies()
+
 import tkinter as tk
 from tkinter import messagebox, Label
 from coordenadas import info
